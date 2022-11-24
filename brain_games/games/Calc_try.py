@@ -1,3 +1,4 @@
+"игра калькулятор"
 from random import randint
 
 

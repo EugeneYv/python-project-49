@@ -1,3 +1,4 @@
+#общий модуль движок для всех игр
 from random import randint
 import prompt
 
@@ -18,6 +19,7 @@ def check_result(x):
         result, question = x.game()
         print(question)
         answer = prompt.string('Your answer: ')
+#result должен приходить в формате string
         if answer != result:
             print(f''''{answer}' is wrong answer ;(. Correct answer was '{result}'.''')
             print(f'''Let's try again, {name}!''')
