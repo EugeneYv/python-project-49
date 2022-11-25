@@ -4,7 +4,6 @@ from random import randint
 
 def game():
     step = randint(1, 10)  # выставляем шаг между числами
-    digits_number = 10    # количество чисел
     start_digit = randint(1, 10)  # начальное число
     digit_list = [start_digit]
     for i in range(1, 11):

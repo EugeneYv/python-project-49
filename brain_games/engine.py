@@ -1,12 +1,10 @@
-#общий модуль движок для всех игр
-from random import randint
+# общий модуль движок для всех игр
 import prompt
 
 
 def welcome():
     print("Welcome to the Brain Games!")
     global name
-#    name = ''
     name = prompt.string("May I have your name? ")
     print(f'Hello, {name}!')
     return name
@@ -19,9 +17,10 @@ def check_result(x):
         result, question = x.game()
         print(question)
         answer = prompt.string('Your answer: ')
-#result должен приходить в формате string
+# result должен приходить в формате string
         if answer != result:
-            print(f''''{answer}' is wrong answer ;(. Correct answer was '{result}'.''')
+            print(f"''{answer}' is wrong answer ;(."
+                  f"Correct answer was '{result}'.")
             print(f'''Let's try again, {name}!''')
             break
         elif answer == result:
