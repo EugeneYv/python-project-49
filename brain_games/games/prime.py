@@ -12,8 +12,7 @@ def game():
         result = "yes"
     else:
         result = "no"
-    question_part1 = '''Answer "yes" if given number is
- prime. Otherwise answer "no".\n'''
+    question_part1 = '''Answer "yes" if given number is prime. Otherwise answer "no".\n'''
     question_part2 = str(f'Question: {random_digit}')
     question = str(question_part1 + question_part2)
     return result, question
