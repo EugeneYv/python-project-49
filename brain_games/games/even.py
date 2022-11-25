@@ -1,3 +1,4 @@
+"игра на определение чётности числа"
 from random import randint
 
 

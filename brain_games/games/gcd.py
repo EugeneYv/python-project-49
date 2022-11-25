@@ -11,4 +11,3 @@ def game():
     question_part2 = str(f'Question: {random_digit1} {random_digit2}')
     question = str(question_part1 + question_part2)
     return result, question
-
