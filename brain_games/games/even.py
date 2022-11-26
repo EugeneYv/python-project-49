@@ -8,8 +8,8 @@ def game():
         result = "yes"
     else:
         result = "no"
-    question_part1 = '''Answer \"yes\" if the number is
-even, otherwise answer "no".\n'''
-    question_part2 = str(f'Question: {random_digit}')
-    question = str(question_part1 + question_part2)
+    question_part1 = 'Answer \"yes\" if the number is even'
+    question_part2 = ', otherwise answer \"no\".\n'
+    question_part3 = str(f'Question: {random_digit}')
+    question = str(question_part1 + question_part2 + question_part3)
     return result, question
