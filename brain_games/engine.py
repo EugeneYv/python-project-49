@@ -19,7 +19,7 @@ def check_result(x):
         answer = prompt.string('Your answer: ')
 # result должен приходить в формате string
         if answer != result:
-            print(f"'{answer}' is wrong answer ;(."      #  f"''{answer}' - исходный вариант
+            print(f"'{answer}' is wrong answer ;(."      # f"''{answer}'
                   f"Correct answer was '{result}'.")
             print(f'''Let's try again, {name}!''')
             break

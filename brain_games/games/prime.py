@@ -3,7 +3,7 @@ from random import randint
 
 
 def game():
-    random_digit = randint(2, 20) # исходный вариант (1, 20)
+    random_digit = randint(2, 20)  # исходный вариант (1, 20)
     k = 0
     for i in range(2, random_digit // 2 + 1):
         if random_digit % i == 0:
