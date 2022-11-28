@@ -13,3 +13,4 @@ def game():
     question_part3 = str(f'Question: {random_digit}')
     question = str(question_part1 + question_part2 + question_part3)
     return result, question
+
