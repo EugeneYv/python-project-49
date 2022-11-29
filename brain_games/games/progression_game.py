@@ -4,6 +4,7 @@ from random import randint
 
 GAME_ANNOUNCE = 'What number is missing in the progression?'
 
+
 def game():
     step = randint(1, 10)  # выставляем шаг между числами
     start_digit = randint(1, 10)  # начальное число
