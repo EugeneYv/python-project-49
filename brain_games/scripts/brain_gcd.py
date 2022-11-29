@@ -2,11 +2,11 @@
 # импортирую функцию из модуля engine (общий для всех):
 from brain_games.engine import start_game
 # импортирую модуль из директории brain_games/games
-from brain_games.games import gcd-game
+from brain_games.games import gcd_game
 
 
 def main():
-    start_game(gcd-game)
+    start_game(gcd_game)
 
 
 if __name__ == '__main__':
