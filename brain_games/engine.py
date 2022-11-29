@@ -6,6 +6,7 @@ def start_game(game):
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")
     print(f'Hello, {name}!')
+    print(game.GAME_ANNOUNCE)
     i = 1
     while 1 < 4:
         result, question = game.game()  # было x.game()
