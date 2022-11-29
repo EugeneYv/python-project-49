@@ -25,11 +25,16 @@ make install
 	poetry install
 
 brain-even
+https://asciinema.org/a/mD1lVWz15GtYXz7dBrodzTs9O
 
 brain-calc
+https://asciinema.org/a/o7lZpHT5AcjqVdShdeUEu5s7W
 
 brain-gcd
+https://asciinema.org/a/3h2DHr90shrdbKzAL53t2C8pQ
 
 brain-progression
+https://asciinema.org/a/UnEOJcUJWe6bbI6dKjBRoA22L
 
 brain-prime
+https://asciinema.org/a/EIYucUPdLmv2f2BaNHikXp8Dv
