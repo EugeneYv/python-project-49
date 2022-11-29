@@ -12,15 +12,16 @@ Python 3.8.10
 Poetry (version 1.2.2)   
 
 Installation
+
 Clone the repository
 $ git clone https://github.com/EugeneYv/python-project-49.git
+
 Use make (Makefile):
 
 make package-reinstall
-
 	python3 -m pip install --user --force-reinstall  dist/*.whl
-make install
 
+make install
 	poetry install
 
 brain-even
