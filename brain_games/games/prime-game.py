@@ -2,6 +2,8 @@
 from random import randint
 
 
+GAME_ANNOUNCE = 'Answer "yes" if given number is prime.Otherwise answer "no".'
+
 def game():
     random_digit = randint(2, 20)  # исходный вариант (1, 20)
     k = 0
@@ -12,8 +14,5 @@ def game():
         result = "yes"
     else:
         result = "no"
-    question_part1 = '''Answer "yes" if given number is prime.'''
-    question_part2 = ''' Otherwise answer "no".\n'''
-    question_part3 = str(f'Question: {random_digit}')
-    question = str(question_part1 + question_part2 + question_part3)
+    question = str(f'Question: {random_digit}')
     return result, question

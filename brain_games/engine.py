@@ -2,19 +2,13 @@
 import prompt
 
 
-def welcome():
+def start_game(game):
     print("Welcome to the Brain Games!")
-    global name
     name = prompt.string("May I have your name? ")
     print(f'Hello, {name}!')
-    return name
-
-
-def check_result(x):
-    welcome()
     i = 1
     while 1 < 4:
-        result, question = x.game()
+        result, question = game.game()  # было x.game()
         print(question)
         answer = prompt.string('Your answer: ')
 # result должен приходить в формате string
