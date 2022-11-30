@@ -14,13 +14,12 @@ def start_game(game):
         answer = prompt.string('Your answer: ')
 # result должен приходить в формате string
         if answer != result:
-            print(f"'{answer}' is wrong answer ;(."      # f"''{answer}'
+            print(f"'{answer}' is wrong answer ;(."
                   f"Correct answer was '{result}'.")
             print(f'''Let's try again, {name}!''')
-            break
+            return
         else:
             print("Correct!")
-            i = i + 1  # добавил tab
-            if i == 4:   # добавил tab
-                print(f"Congratulations, {name}!")
-                break
+            i = i + 1
+        if i == 4:
+            print(f"Congratulations, {name}!")

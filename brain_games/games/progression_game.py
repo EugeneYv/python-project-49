@@ -12,7 +12,6 @@ def get_game():
     string_list = [str(i) for i in number_list]
     string = (" ".join(string_list))
     question = str(f'Question: {string}')
-    print(result)
     return result, question
 
 

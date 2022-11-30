@@ -12,8 +12,6 @@ def get_game():
     else:
         result = "no"
     question = str(f'Question: {random_number}')
-    print(result)
-    print(question)
     return result, question
 
 
