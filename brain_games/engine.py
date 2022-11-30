@@ -8,7 +8,7 @@ def start_game(game):
     print(f'Hello, {name}!')
     print(game.RULE)
     i = 1
-    while 1 < 4:
+    while i < 4:
         result, question = game.get_game()  # было x.game()
         print(question)
         answer = prompt.string('Your answer: ')
@@ -20,6 +20,6 @@ def start_game(game):
             return
         else:
             print("Correct!")
-            i = i + 1
+        i = i + 1
         print(f"Congratulations, {name}!")
         return
