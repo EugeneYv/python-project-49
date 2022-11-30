@@ -12,7 +12,6 @@ def start_game(game):
         result, question = game.get_game()  # было x.game()
         print(question)
         answer = prompt.string('Your answer: ')
-# result должен приходить в формате string
         if answer != result:
             print(f"'{answer}' is wrong answer ;(."
                   f"Correct answer was '{result}'.")
@@ -20,6 +19,6 @@ def start_game(game):
             return
         else:
             print("Correct!")
-        i = i + 1
-        print(f"Congratulations, {name}!")
-        return
+            i = i + 1
+    print(f"Congratulations, {name}!")
+    return
