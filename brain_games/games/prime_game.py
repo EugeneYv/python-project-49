@@ -2,19 +2,28 @@
 from random import randint
 
 
-GAME_ANNOUNCE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def game():
-    random_digit = randint(2, 20)  # исходный вариант (1, 20)
+def get_game():
+    random_number = randint(2, 20)
+    print(random_number)
+    if is_prime(random_number):
+        result = 'yes'
+    else:
+        result = 'no'
+    question = str(f'Question: {random_number}')
+    print(result)
+    print(question)
+    return result, question
+
+
+def is_prime(x):
     k = 0
-    for i in range(2, random_digit // 2 + 1):
-        if random_digit % i == 0:
+    for i in range(2, x // 2 + 1):
+        if x % i == 0:
             k = k + 1
     if k <= 0:
-        result = "yes"
+        return True
     else:
-        result = "no"
-    question = str(f'Question: {random_digit}')
-
-    return result, question
+        return False

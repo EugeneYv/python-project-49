@@ -2,14 +2,21 @@
 from random import randint
 
 
-GAME_ANNOUNCE = 'Answer "yes" if the number is even, otherwise answer "no".'
+RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def game():
-    random_digit = randint(1, 20)
-    if random_digit % 2 == 0:
+def get_game():
+    random_number = randint(1, 20)
+    if is_even(random_number):
         result = "yes"
-    else:
+    if is_even(random_number) is False:
         result = "no"
-    question = str(f'Question: {random_digit}')
+    question = str(f'Question: {random_number}')
     return result, question
+
+
+def is_even(x):
+    if x % 2 == 0:
+        return True
+    else:
+        return False

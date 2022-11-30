@@ -6,7 +6,7 @@ def start_game(game):
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")
     print(f'Hello, {name}!')
-    print(game.GAME_ANNOUNCE)
+    print(game.RULE)
     i = 1
     while 1 < 4:
         result, question = game.game()  # было x.game()
@@ -18,9 +18,9 @@ def start_game(game):
                   f"Correct answer was '{result}'.")
             print(f'''Let's try again, {name}!''')
             break
-        elif answer == result:
+        else:
             print("Correct!")
-        i = i + 1
-        if i == 4:
-            print(f"Congratulations, {name}!")
-            break
+            i = i + 1  # добавил tab
+            if i == 4:   # добавил tab
+                print(f"Congratulations, {name}!")
+                break

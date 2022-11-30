@@ -1,20 +1,22 @@
 "игра прогрессия"
 from random import randint
 
-GAME_ANNOUNCE = 'What number is missing in the progression?'
+RULE = 'What number is missing in the progression?'
 
 
-def game():
+def get_game():
     random_index = randint(1, 10)
-    number_list = progression()
+    number_list = get_progression()
     result = str(number_list[random_index])
     number_list[random_index] = '..'
-    string = str(number_list).strip('[]').replace("'", "").replace(",", "")
+    string_list = [str(i) for i in number_list]
+    string = (" ".join(string_list))
     question = str(f'Question: {string}')
+    print(result)
     return result, question
 
 
-def progression():
+def get_progression():
     step = randint(1, 10)  # выставляем шаг между числами
     start_number = randint(1, 10)  # начальное число
     list = [start_number]

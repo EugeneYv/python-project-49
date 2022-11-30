@@ -3,30 +3,24 @@ from random import randint
 from random import choice
 
 
-GAME_ANNOUNCE = 'What is the result of the expression?'
+RULE = 'What is the result of the expression?'
+OPERATORS = ['-', '+', '*']
+make_choice = choice(OPERATORS)
 
 
-def game():
-    result = 'noresult'
+def get_game():
     random_number1 = randint(1, 10)
     random_number2 = randint(1, 10)
-    operators = ['-', '+', '*']
-#    print(operators)
-    make_choice = choice(operators)
-#    print(make_choice)
-    if make_choice == '-':
-        result = str(random_number1 - random_number2)
-#        print(result)
-    if make_choice == '+':
-        result = str(random_number1 + random_number2)
-#        print(result)
-    if make_choice == '*':
-        result = str(random_number1 * random_number2)
-#        print(result)
+    result = get_result(random_number1, random_number2)
     question = str(f'Question: {random_number1} {make_choice} {random_number2}')
-#    print(result)
-#    print(question)
     return result, question
 
 
-game()
+def get_result(x, y):
+    if make_choice == '-':
+        result = str(x - y)
+    if make_choice == '+':
+        result = str(x + y)
+    if make_choice == '*':
+        result = str(x * y)
+    return result
