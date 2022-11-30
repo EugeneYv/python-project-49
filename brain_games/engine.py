@@ -23,3 +23,4 @@ def start_game(game):
             i = i + 1
         if i == 4:
             print(f"Congratulations, {name}!")
+            return
