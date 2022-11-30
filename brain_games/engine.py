@@ -21,6 +21,5 @@ def start_game(game):
         else:
             print("Correct!")
             i = i + 1
-        if i == 4:
-            print(f"Congratulations, {name}!")
-            return
+        print(f"Congratulations, {name}!")
+        return
