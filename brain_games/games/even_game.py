@@ -9,9 +9,11 @@ def get_game():
     random_number = randint(1, 20)
     if is_even(random_number):
         result = "yes"
-    if is_even(random_number) is False:
+    else:
         result = "no"
     question = str(f'Question: {random_number}')
+    print(result)
+    print(question)
     return result, question
 
 

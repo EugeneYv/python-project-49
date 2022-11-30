@@ -9,7 +9,7 @@ def start_game(game):
     print(game.RULE)
     i = 1
     while 1 < 4:
-        result, question = game.game()  # было x.game()
+        result, question = game.get_game()  # было x.game()
         print(question)
         answer = prompt.string('Your answer: ')
 # result должен приходить в формате string

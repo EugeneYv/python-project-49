@@ -7,14 +7,11 @@ RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def get_game():
     random_number = randint(2, 20)
-    print(random_number)
     if is_prime(random_number):
         result = 'yes'
     else:
         result = 'no'
     question = str(f'Question: {random_number}')
-    print(result)
-    print(question)
     return result, question
 
 
